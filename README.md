@@ -137,9 +137,9 @@ contract MemeToken is ERC20, Ownable {
 
 ## 🌐 Lens Chain
 - ✅ Tokens deployed on **Lens Chain** (ZKsync-based)
-- 🔍 Verified via zkSync block explorer
+- 🔍 Verified via lens block explorer
 - ⚡ Fast finality & low gas fees
-- 📢 Posted to Lens via `createPost()` and `textOnly()` metadata
+- 📢 Posted to Lens via `post()` and `textOnly()` metadata
 
 ---
 
