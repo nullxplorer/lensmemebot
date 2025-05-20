@@ -2,7 +2,7 @@
 
 [![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram)](https://t.me/lensmemebot)
 [![Lens Protocol](https://img.shields.io/badge/Built%20for-Lens%20Chain-purple.svg)](https://lens.xyz)
-[![Deploys on](https://img.shields.io/badge/Deploys%20on-ZKSync%20Lens%20Chain-29b6f6.svg)](https://hey.xyz)
+[![Deploys on](https://img.shields.io/badge/Deploys%20on-Lens%20Chain-29b6f6.svg)](https://hey.xyz)
 
 A powerful Telegram bot that lets anyone deploy a verified **ERC-20 meme token** on the **Lens Chain (ZKsync-based Layer 2)** in seconds — no coding needed!
 
