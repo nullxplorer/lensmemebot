@@ -1,6 +1,6 @@
 # 🚀 Lens Meme Token Deployer Bot on Lens Chain
 
-[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram)](https://t.me/lensmemebot)
+[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram)](https://t.me/your_bot_username)
 [![Lens Protocol](https://img.shields.io/badge/Built%20for-Lens%20Chain-purple.svg)](https://lens.xyz)
 [![Deploys on](https://img.shields.io/badge/Deploys%20on-Lens%20Chain-29b6f6.svg)](https://hey.xyz)
 
@@ -151,9 +151,8 @@ contract MemeToken is ERC20, Ownable {
 
 ```ini
 BOT_TOKEN=your_telegram_bot_token
-PRIVATE_KEY=your_deployer_wallet_private_key
-RPC_URL=https://rpc.testnet.lens.xyz
-
+PRIVATE_KEY=your_deployer_wallet_private_key_OR_bot_wallet_private_key
+RPC_URL=https://rpc.lens.xyz
 ```
 
 ---
@@ -166,27 +165,33 @@ RPC_URL=https://rpc.testnet.lens.xyz
 git clone https://github.com/nullxplorer/lensmemebot.git
 cd lensmemebot
 ```
+2. **Install the dependencies:**
 
-2. **Configure environment:**
+```bash
+# Use node >=20.0.0 (preferred)
+npm install
+```
+
+3. **Configure environment:**
 
 ```bash
 cp .env.example .env
 # Edit .env with your credentials
 ```
 
-3. **Compile contracts:**
+4. **Compile contracts:**
 
 ```bash
 npx hardhat compile
 ```
 
-4. **Start the bot:**
+5. **Start the bot:**
 
 ```bash
 npm start
 ```
 
-5. **Test it in Telegram:**
+6. **Test it in Telegram:**
 
 - Start your bot
 - Type `/creatememetoken`
@@ -212,8 +217,9 @@ User: @vitalik
 
 ✅ Deployed!  
 📦 Contract Address: `0xABCDEF...`  
+🪙 Token: `DogeKing (DKING)`  
 👑 Owner: Wallet behind `@vitalik`  
-🔗 Explorer: `https://explorer.lenschain.xyz/address/0xABCDEF...`  
+🔗 Explorer: `https://explorer.lens.xyz/address/0xABCDEF...`  
 📢 View post: `https://hey.xyz/u/lensmemebot`  
 
 ---
