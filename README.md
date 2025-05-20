@@ -1,7 +1,6 @@
 # 🚀 Lens Meme Token Deployer Bot on Lens Chain
 
-[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram)](https://t.me/your_bot_username)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram)](https://t.me/lensmemebot)
 [![Lens Protocol](https://img.shields.io/badge/Built%20for-Lens%20Chain-purple.svg)](https://lens.xyz)
 [![Deploys on](https://img.shields.io/badge/Deploys%20on-ZKSync%20Lens%20Chain-29b6f6.svg)](https://hey.xyz)
 
@@ -153,7 +152,8 @@ contract MemeToken is ERC20, Ownable {
 ```ini
 BOT_TOKEN=your_telegram_bot_token
 PRIVATE_KEY=your_deployer_wallet_private_key
-RPC_URL=https://rpc.zksync.io
+RPC_URL=https://rpc.testnet.lens.xyz
+
 ```
 
 ---
@@ -217,7 +217,3 @@ User: @vitalik
 📢 View post: `https://hey.xyz/u/lensmemebot`  
 
 ---
-
-## 🧠 License & Contributions
-
-Open-source under MIT. PRs welcome!
