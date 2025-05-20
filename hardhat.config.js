@@ -22,6 +22,14 @@ module.exports = {
       zksync: true,
       accounts: [process.env.PRIVATE_KEY]
     },
+    lensMainnet: {
+      chainId: 232,
+      ethNetwork: "mainnet",
+      url: process.env.RPC_URL || "https://rpc.lens.xyz",
+      verifyURL: "https://verify.lens.xyz/contract_verification",
+      zksync: true,
+      accounts: [process.env.PRIVATE_KEY]
+    },
     hardhat: {
       zksync: true
     }
