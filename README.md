@@ -4,6 +4,8 @@
 [![Lens Protocol](https://img.shields.io/badge/Built%20for-Lens%20Chain-purple.svg)](https://lens.xyz)
 [![Deploys on](https://img.shields.io/badge/Deploys%20on-Lens%20Chain-29b6f6.svg)](https://hey.xyz)
 
+![LensMemeBot Logo](lensmemebot.png)
+
 A powerful Telegram bot that lets anyone deploy a verified **ERC-20 meme token** on the **Lens Chain (ZKsync-based Layer 2)** in seconds — no coding needed!
 
 Created for memecoin enthusiasts, this bot integrates with **Lens Social Primitives** to ensure tokens are posted socially, enabling discoverability and virality.
