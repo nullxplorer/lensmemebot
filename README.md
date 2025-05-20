@@ -7,7 +7,6 @@
 [![Deploys on](https://img.shields.io/badge/Deploys%20on-Lens%20Chain-29b6f6.svg)](https://hey.xyz)
 
 </div>
----
 
 ![LensMemeBot Logo](lensmemebot.png)
 
