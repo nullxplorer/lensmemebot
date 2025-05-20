@@ -4,9 +4,10 @@ const { userFollowsBot } = require("./lens");
 const { Provider } = require("zksync-ethers");
 const fs = require("fs");
 require("dotenv").config();
+const { ethers } = require("ethers");
 
 // Add explorer URL
-const EXPLORER_URL = "https://explorer.testnet.lens.xyz";
+const EXPLORER_URL = process.env.EXPLORER_URL || "https://explorer.testnet.lens.xyz";
 
 // Add contract artifact
 const contractArtifact = JSON.parse(
@@ -20,9 +21,6 @@ const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 
 const userSessions = {};
 
-// Define bot commands - commands must be lowercase and without spaces
-// Add new commands
-// Update commands array
 const commands = [
   { command: 'creatememetoken', description: 'Create a new meme token' },
   { command: 'help', description: 'Show available commands' },
@@ -103,7 +101,7 @@ bot.onText(/\/tokeninfo/, async (msg) => {
           tokenContract.symbol(),
           tokenContract.totalSupply(),
           tokenContract.decimals(),
-          tokenContract.owner()  // Get the owner address
+          tokenContract.owner()
         ]);
 
         // Format total supply with decimals
@@ -294,7 +292,7 @@ bot.onText(/\/transfers/, async (msg) => {
           return `From: ${from.slice(0, 6)}...${from.slice(-4)}\n` +
                  `To: ${to.slice(0, 6)}...${to.slice(-4)}\n` +
                  `Amount: ${value}\n` +
-                 `TX: https://explorer.testnet.lens.xyz/tx/${event.transactionHash}\n`;
+                 `TX: ${EXPLORER_URL}/tx/${event.transactionHash}\n`;
         }));
 
         // Send transfers in batches to avoid message length limits
@@ -381,7 +379,7 @@ bot.onText(/\/balance/, async (msg) => {
             `💰 *Wallet Balance*\n\n` +
             `*Address:* \`${walletAddress}\`\n` +
             `*Balance:* ${formattedBalance} ${tokenSymbol}\n\n` +
-            `🔗 View on Explorer: https://explorer.testnet.lens.xyz/address/${walletAddress}`,
+            `🔗 View on Explorer: ${EXPLORER_URL}/address/${walletAddress}`,
             { parse_mode: "Markdown" }
           );
         } catch (error) {
