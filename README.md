@@ -1,9 +1,11 @@
 # 🚀 Lens Meme Token Deployer Bot on Lens Chain
 
 <div align="center">
+   
 [![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram)](https://t.me/your_bot_username)
 [![Lens Protocol](https://img.shields.io/badge/Built%20for-Lens%20Chain-purple.svg)](https://lens.xyz)
 [![Deploys on](https://img.shields.io/badge/Deploys%20on-Lens%20Chain-29b6f6.svg)](https://hey.xyz)
+
 </div>
 ---
 
